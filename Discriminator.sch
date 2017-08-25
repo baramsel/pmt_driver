@@ -1,0 +1,207 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dc-dc
+LIBS:switches
+LIBS:maxim
+LIBS:pmt_driver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L OP249 U?
+U 1 1 59A0AED6
+P 5300 3150
+F 0 "U?" H 5300 3350 50  0000 L CNN
+F 1 "OP249" H 5300 2950 50  0000 L CNN
+F 2 "" H 5300 3150 50  0001 C CNN
+F 3 "" H 5300 3150 50  0001 C CNN
+	1    5300 3150
+	1    0    0    -1  
+$EndComp
+Text HLabel 3700 3050 0    60   Input ~ 0
+Input
+Text HLabel 2850 3850 0    60   Input ~ 0
+GND
+Text HLabel 3000 2500 0    60   Input ~ 0
+VCC_+5V
+Text HLabel 5050 3700 0    60   Input ~ 0
+VCC_-5V
+Text HLabel 6650 3150 2    60   Input ~ 0
+Output
+$Comp
+L R R?
+U 1 1 59A0AF15
+P 4500 3250
+F 0 "R?" V 4580 3250 50  0000 C CNN
+F 1 "R" V 4500 3250 50  0000 C CNN
+F 2 "" V 4430 3250 50  0001 C CNN
+F 3 "" H 4500 3250 50  0001 C CNN
+	1    4500 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 59A0AF58
+P 4250 3050
+F 0 "R?" V 4330 3050 50  0000 C CNN
+F 1 "R" V 4250 3050 50  0000 C CNN
+F 2 "" V 4180 3050 50  0001 C CNN
+F 3 "" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV?
+U 1 1 59A0B088
+P 3000 3450
+F 0 "RV?" V 2825 3450 50  0000 C CNN
+F 1 "POT" V 2900 3450 50  0000 C CNN
+F 2 "" H 3000 3450 50  0001 C CNN
+F 3 "" H 3000 3450 50  0001 C CNN
+	1    3000 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2500 3000 3300
+Wire Wire Line
+	3000 3600 3000 4000
+Wire Wire Line
+	3200 3450 3900 3450
+Wire Wire Line
+	3900 3450 3900 3250
+Wire Wire Line
+	3700 3050 4100 3050
+Wire Wire Line
+	4400 3050 5000 3050
+Wire Wire Line
+	3000 2600 5200 2600
+Wire Wire Line
+	5200 2500 5200 2850
+Connection ~ 3000 2600
+$Comp
+L C C?
+U 1 1 59A0B1CA
+P 5200 4050
+F 0 "C?" H 5225 4150 50  0000 L CNN
+F 1 "C" H 5225 3950 50  0000 L CNN
+F 2 "" H 5238 3900 50  0001 C CNN
+F 3 "" H 5200 4050 50  0001 C CNN
+	1    5200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59A0B202
+P 5200 2350
+F 0 "C?" H 5225 2450 50  0000 L CNN
+F 1 "C" H 5225 2250 50  0000 L CNN
+F 2 "" H 5238 2200 50  0001 C CNN
+F 3 "" H 5200 2350 50  0001 C CNN
+	1    5200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A0B240
+P 3000 4000
+F 0 "#PWR?" H 3000 3750 50  0001 C CNN
+F 1 "GND" H 3000 3850 50  0000 C CNN
+F 2 "" H 3000 4000 50  0001 C CNN
+F 3 "" H 3000 4000 50  0001 C CNN
+	1    3000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3900 5200 3450
+$Comp
+L GND #PWR?
+U 1 1 59A0B332
+P 5200 4300
+F 0 "#PWR?" H 5200 4050 50  0001 C CNN
+F 1 "GND" H 5200 4150 50  0000 C CNN
+F 2 "" H 5200 4300 50  0001 C CNN
+F 3 "" H 5200 4300 50  0001 C CNN
+	1    5200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A0B450
+P 5200 2100
+F 0 "#PWR?" H 5200 1850 50  0001 C CNN
+F 1 "GND" H 5200 1950 50  0000 C CNN
+F 2 "" H 5200 2100 50  0001 C CNN
+F 3 "" H 5200 2100 50  0001 C CNN
+	1    5200 2100
+	-1   0    0    1   
+$EndComp
+Connection ~ 5200 2600
+Wire Wire Line
+	5200 2200 5200 2100
+Wire Wire Line
+	5200 4300 5200 4200
+Wire Wire Line
+	5600 3150 6650 3150
+Wire Wire Line
+	3900 3250 4350 3250
+Wire Wire Line
+	4650 3250 5000 3250
+Wire Wire Line
+	5050 3700 5200 3700
+Connection ~ 5200 3700
+Wire Wire Line
+	2850 3850 3900 3850
+Connection ~ 3000 3850
+$Comp
+L C C?
+U 1 1 59A0B8CB
+P 3900 3600
+F 0 "C?" H 3925 3700 50  0000 L CNN
+F 1 "C" H 3925 3500 50  0000 L CNN
+F 2 "" H 3938 3450 50  0001 C CNN
+F 3 "" H 3900 3600 50  0001 C CNN
+	1    3900 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3850 3900 3750
+$EndSCHEMATC
